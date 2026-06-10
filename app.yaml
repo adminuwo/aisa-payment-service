@@ -1,0 +1,18 @@
+runtime: nodejs20
+service: payment-service
+instance_class: F2
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 0
+  max_instances: 10
+
+env_variables:
+  NODE_ENV: 'production'
+  PORT: '8080'
+  RAZORPAY_MODE: 'live'
+  FRONTEND_URL: 'https://aisa24.com'
+  BACKEND_URL: 'https://aisa24.com'
+  APPLE_PAY_MERCHANT_ID: 'merchant.com.aisa24.pay'
+  APPLE_PAY_DOMAIN: 'aisa24.com'
+  APPLE_PAY_DISPLAY_NAME: 'AISA'
+  GCP_PROJECT_ID: 'ai-mall-484810'

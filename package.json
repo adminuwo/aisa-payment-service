@@ -1,0 +1,20 @@
+{
+  "name": "aisa-payment-service",
+  "version": "1.0.0",
+  "description": "Isolated payment domain microservice for AISA",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "razorpay": "^2.9.6"
+  }
+}
